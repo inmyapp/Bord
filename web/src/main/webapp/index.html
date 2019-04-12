@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta http-equiv="refresh" content="14400" />
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="//stackpath.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css" />
+		<link rel="stylesheet" href="//cdn.rawgit.com/FortAwesome/Font-Awesome/v4.7.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="//cdn.rawgit.com/l-lin/angular-datatables/v0.6.4/dist/plugins/bootstrap/datatables.bootstrap.min.css" />
+		<link rel="stylesheet" href="css/sidebar.css" />
+		<title>Bord</title>
+	</head>
+	<body>
+		<aside class="sidebar-left">
+			<a class="link-blue" ui-sref="bike" ui-sref-active="selected"><i class="fa fa-bicycle"></i>Bike</a>
+			<a class="link-blue" ui-sref="car" ui-sref-active="selected"><i class="fa fa-car"></i>Car</a>
+			<a class="link-blue" ui-sref="plane" ui-sref-active="selected"><i class="fa fa-plane"></i>Plane</a>
+			<a class="link-blue" ui-sref="rocket" ui-sref-active="selected"><i class="fa fa-rocket"></i>Rocket</a>
+		</aside>
+		<div class="main-content">
+			<div ui-view=""></div>
+		</div>
+		<script data-main="app/main" src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.js"></script>
+	</body>
+</html>

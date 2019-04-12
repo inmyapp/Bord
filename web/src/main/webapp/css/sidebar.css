@@ -1,0 +1,128 @@
+/* The main content */
+.main-content {
+	padding-top: 20px;
+	margin: 0 0 40px 100px;
+}
+
+/* The left sidebar */
+
+.sidebar-left {
+	font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #000;
+	width: 80px;
+	height: 100%;
+	padding: 20px 0;
+}
+
+.sidebar-left a {
+	display: block;
+	margin: 20px auto;
+	padding: 5px 0;
+
+	text-decoration: none;
+	text-align: center;
+	color:  #fff;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.sidebar-left a i.fa {
+	display: block;
+	font-size: 35px;
+	margin: 5px 0;
+}
+
+.sidebar-left a.selected,
+.sidebar-left a.selected:hover {
+	background-color: #2196f3;
+	color:  #fff;
+	font-size: 12px;
+	cursor: default;
+}
+
+.sidebar-left a:hover {
+	background-color: #fff;
+	color:  #000;
+	font-size: 12px;
+	cursor: default;
+}
+
+/* Making the sidebar responsive */
+
+@media (max-width: 1049px) {
+
+	.main-content{
+		max-width: none;
+		padding: 20px 10px;
+		margin: 0 0 40px;
+	}
+
+	.sidebar-left {
+		width: auto;
+		height: auto;
+		position: inherit;
+		padding: 0;
+		margin: 0 auto;
+	}
+
+	.sidebar-left a {
+		display: inline-block;
+		width: 80px;
+		margin: 0 10px;
+		padding: 5px 0;
+	}
+
+	#clock {
+		display: none;
+	}
+}
+
+/* Mobile phone layout */
+
+@media (max-width: 659px) {
+
+	.sidebar-left {
+		padding: 5px 0;
+	}
+
+	.sidebar-left a {
+		display: block;
+		max-width: none;
+		width: auto;
+		vertical-align: middle;
+		text-align: left;
+		margin: 0 auto 5px;
+		padding: 5px 10px;
+	}
+
+	.sidebar-left a i.fa {
+		display: inline-block;
+		font-size: 20px;
+		width: 20px;
+		margin: 0 20px 0 0;
+		vertical-align: middle;
+	}
+
+	#clock {
+		display: none;
+	}
+}
+
+/*	Removing margins and paddings from the body, so that
+    the sidebar takes the full height of the page */
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.sidebar-left a:hover {
+  border-color: #000;
+}
+
+.sidebar-left a.selected:hover {
+  border-color: #FFF;
+}

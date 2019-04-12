@@ -1,0 +1,8 @@
+[
+	{"name":"Jan", "baard":true, "kaap": true},
+	{"name":"Piet", "baard":true, "kaap": true},
+	{"name":"Joris", "baard":true, "kaap": true},
+	{"name":"Corneel", "baard":true, "kaap": true},
+	{"name":"Nick", "baard":false, "kaap": false},
+	{"name":"Mark", "baard":false, "kaap": false}
+]
